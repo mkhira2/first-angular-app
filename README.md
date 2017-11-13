@@ -8,7 +8,7 @@ Screenshot coming soon.
 
 ## Installation
 ```
-git clone https://github.com/ReggEvans/first-angular-app.git
+git clone https://github.com/mkhira2/first-angular-app.git
 cd first-angular-app
 npm install
 ng serve

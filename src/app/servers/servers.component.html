@@ -3,10 +3,12 @@
     type="text"
     class="form-control"
     [(ngModel)]="serverName">
+<hr>
 <button 
     class="btn btn-primary" 
     [disabled]="!allowNewServer"
     (click)="onCreateServer()">Add Server</button>
+<hr>
 <p>{{ serverCreationStatus }}</p>
-<app-server></app-server>
+<hr>
 <app-server></app-server>

@@ -9,6 +9,10 @@
     [disabled]="!allowNewServer"
     (click)="onCreateServer()">Add Server</button>
 <hr>
-<p>{{ serverCreationStatus }}</p>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverCreated; else: noServer">{{ serverName }} was created.</p>
+<ng-template #noServer>
+    <p>Please create a server.</p>
+</ng-template>
 <hr>
 <app-server></app-server>

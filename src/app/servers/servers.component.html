@@ -4,12 +4,12 @@
     class="form-control"
     [(ngModel)]="serverName">
 <hr>
-<button 
-    class="btn btn-primary" 
+<button
+    class="btn btn-primary"
     [disabled]="!allowNewServer"
     (click)="onCreateServer()">Add Server</button>
 <hr>
-<!-- <p>{{ serverCreationStatus }}</p> -->
+
 <p *ngIf="serverCreated; else: noServer">{{ serverName }} was created.</p>
 <ng-template #noServer>
     <p>Please create a server.</p>

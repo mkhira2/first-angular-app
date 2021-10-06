@@ -11,6 +11,4 @@ git clone https://github.com/mkhira2/first-angular-app.git
 cd first-angular-app
 npm install
 ng serve
-
-open localhost:4200 in the browser
 ```
